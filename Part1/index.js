@@ -1,4 +1,4 @@
-
+const board = [];
 
 function play(clickedId) {
     const playerSpan = document.getElementById('player');
@@ -12,4 +12,4 @@ function play(clickedId) {
         clickedElement.innerText = 'O';
       }
     }
-    console.log("ran")
+    console.log("board")
