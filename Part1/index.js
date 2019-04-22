@@ -40,6 +40,14 @@ if (topLeft !== undefined && topLeft === middleCenter && topLeft === bottomRight
     alert(`${topLeft} is the winner`);
     return;
 
-    if (topRight !== undefined && topRight === middleCenter && bottomLeft === topRight) {
+    if (topRight !== undefined && topRight === middleCenter && middleLeft === bottomLeft) {
         alert(`${topRight} is the winner`);
         return;
+
+        if (topRight !== undefined && topRight === middleCenter && topRight === bottomRight) {
+            alert(`${topRight} is the winner`);
+            return;
+
+            if (topLeft !== undefined && topLeft === middleLeft && topLeft === bottomLeft) {
+                alert(`${topLeft} is the winner`);
+                return;
