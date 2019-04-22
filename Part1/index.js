@@ -114,4 +114,4 @@ function play(clickedId) {
 //     alert(`${topCenter} is the winner`);
 //     return;
 //              }
-        }
+        
