@@ -24,30 +24,31 @@ function play(clickedId) {
   const bottomCenter = board[7];
   const bottomRight = board[8];
 
-  if (topLeft !== undefined && topLeft === topCenter && topLeft === topRight) {
+if (topLeft !== undefined && topLeft === topCenter && topLeft === topRight) {
     alert(`${topLeft} is the winner`);
     return;
-
-    if (middleLeft !== undefined && middleLeft === middleCenter && middleLeft === middleRight) {
-        alert(`${middleLeft} is the winner`);
-        return;
-
-        if (bottomLeft !== undefined && bottomLeft === bottomCenter && bottomLeft === bottomRight) {
-            alert(`${bottomLeft} is the winner`);
-            return;
-
+  }
+if (middleLeft !== undefined && middleLeft === middleCenter && middleLeft === middleRight) {
+    alert(`${middleLeft} is the winner`);
+    return;
+    }
+if (bottomLeft !== undefined && bottomLeft === bottomCenter && bottomLeft === bottomRight) {
+    alert(`${bottomLeft} is the winner`);
+    return;
+        }
 if (topLeft !== undefined && topLeft === middleCenter && topLeft === bottomRight) {
     alert(`${topLeft} is the winner`);
     return;
-
-    if (topRight !== undefined && topRight === middleCenter && middleLeft === bottomLeft) {
-        alert(`${topRight} is the winner`);
-        return;
-
-        if (topRight !== undefined && topRight === middleCenter && topRight === bottomRight) {
-            alert(`${topRight} is the winner`);
-            return;
-
-            if (topLeft !== undefined && topLeft === middleLeft && topLeft === bottomLeft) {
-                alert(`${topLeft} is the winner`);
-                return;
+}
+if (topRight !== undefined && topRight === middleCenter && middleLeft === bottomLeft) {
+    alert(`${topRight} is the winner`);
+    return;
+    }
+if (topRight !== undefined && topRight === middleCenter && topRight === bottomRight) {
+    alert(`${topRight} is the winner`);
+    return;
+        }
+if (topLeft !== undefined && topLeft === middleLeft && topLeft === bottomLeft) {
+    alert(`${topLeft} is the winner`);
+    return;
+            }
