@@ -32,6 +32,14 @@ function play(clickedId) {
         alert(`${middleLeft} is the winner`);
         return;
 
-        if (topLeft !== undefined && topLeft === topCenter && topLeft === topRight) {
-            alert(`${topLeft} is the winner`);
+        if (bottomLeft !== undefined && bottomLeft === bottomCenter && bottomLeft === bottomRight) {
+            alert(`${bottomLeft} is the winner`);
             return;
+
+if (topLeft !== undefined && topLeft === middleCenter && topLeft === bottomRight) {
+    alert(`${topLeft} is the winner`);
+    return;
+
+    if (topRight !== undefined && topRight === middleCenter && bottomLeft === topRight) {
+        alert(`${topRight} is the winner`);
+        return;
