@@ -23,3 +23,15 @@ function play(clickedId) {
   const bottomLeft = board[6];
   const bottomCenter = board[7];
   const bottomRight = board[8];
+
+  if (topLeft !== undefined && topLeft === topCenter && topLeft === topRight) {
+    alert(`${topLeft} is the winner`);
+    return;
+
+    if (middleLeft !== undefined && middleLeft === middleCenter && middleLeft === middleRight) {
+        alert(`${middleLeft} is the winner`);
+        return;
+
+        if (topLeft !== undefined && topLeft === topCenter && topLeft === topRight) {
+            alert(`${topLeft} is the winner`);
+            return;
