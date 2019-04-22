@@ -11,7 +11,7 @@ function play(clickedId) {
         playerSpan.innerText = 'X';
         clickedElement.innerText = 'O';
       }
-    }
+    
     console.log("board")
 
     const topLeft = board[0];
@@ -52,3 +52,8 @@ if (topLeft !== undefined && topLeft === middleLeft && topLeft === bottomLeft) {
     alert(`${topLeft} is the winner`);
     return;
             }
+if (topCenter !== undefined && topCenter === middleCenter && topCenter === bottomCenter) {
+    alert(`${topCenter} is the winner`);
+    return;
+             }
+        }
